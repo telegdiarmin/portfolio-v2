@@ -108,14 +108,14 @@
 }
 
 .txt-divider {
-    color: rgb(40, 235, 215);
+  color: rgb(40, 235, 215);
 }
 
 @media screen and (max-width: 600px) {
-    .timeline {
-        /* margin: 0 10%; */
-        margin-bottom: 3rem;
-    }
+  .timeline {
+    /* margin: 0 10%; */
+    margin-bottom: 3rem;
+  }
 
   .timeline::after {
     left: 31px;
