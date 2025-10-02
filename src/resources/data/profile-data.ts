@@ -13,5 +13,5 @@ export const profileData: ProfileData = {
   bio: 'Passionate about creating efficient and scalable web applications.',
   email: 'contact@example.com',
   location: 'Location',
-  avatar: '/src/resources/images/profile-picture.jpg'
+  avatar: '/Profile-picture.jpg'
 };
