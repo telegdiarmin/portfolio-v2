@@ -1,36 +1,48 @@
-import { useState } from "react";
+import type { FC } from 'react';
 
-import "./App.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// Component imports (will be implemented in later tasks)
+import { Terminal } from '@/components/terminal';
+import { Typewriter } from '@/components/typewriter'; 
+import { ProfileSection } from '@/components/profile-section';
+import { Avatar } from '@/components/avatar';
+import { Timeline } from '@/components/timeline';
+import { SkillsCloud } from '@/components/skills-cloud';
+import { ScrollIndicator } from '@/components/scroll-indicator';
 
-function App() {
-  const [count, setCount] = useState(0);
+// Data imports
+import { profileData } from '@/resources/data/profile-data';
 
+import './App.css';
+
+const App: FC = () => {
   return (
-    <>
-      <div>
-        <a href='https://vite.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <ScrollIndicator />
+      
+      <main className="app__main">
+        <section className="app__hero">
+          <Terminal />
+          <Typewriter text="Welcome to my portfolio" />
+        </section>
+
+        <ProfileSection />
+        
+        <section className="app__about">
+          <Avatar />
+          <h1>{profileData.name}</h1>
+          <p>{profileData.title}</p>
+          <p>{profileData.bio}</p>
+        </section>
+
+        <Timeline />
+        
+        <section className="app__skills">
+          <h2>Skills</h2>
+          <SkillsCloud />
+        </section>
+      </main>
+    </div>
   );
-}
+};
 
 export default App;

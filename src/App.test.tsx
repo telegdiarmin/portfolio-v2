@@ -5,13 +5,13 @@ import App from "@/App";
 describe("App Component", () => {
   it("should render without crashing", () => {
     render(<App />);
-    expect(screen.getByText("Vite + React")).toBeInTheDocument();
+    expect(screen.getByText("Armin Telegdi")).toBeInTheDocument();
   });
 
-  it("should display initial count", () => {
+  it("should display portfolio components", () => {
     render(<App />);
-    expect(
-      screen.getByRole("button", { name: /count is 0/i })
-    ).toBeInTheDocument();
+    expect(screen.getByText("Welcome to my portfolio")).toBeInTheDocument();
+    expect(screen.getByText("Skills")).toBeInTheDocument();
+    expect(screen.getByText("Software Developer")).toBeInTheDocument();
   });
 });
