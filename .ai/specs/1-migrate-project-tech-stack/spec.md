@@ -243,7 +243,7 @@ Verification:
 
 ### Task 9: Create Core UI Components
 
-Status: TODO
+Status: DONE
 Depends On: Task 6, Task 7
 Description:
 Build foundational UI components: Button, Dropdown, ScrollIndicator.
@@ -253,12 +253,13 @@ Set up barrel exports for UI components.
 
 Verification:
 
-- Button component matches original styling and behavior
-- Dropdown component includes proper click-outside functionality
-- ScrollIndicator component has bounce animation
-- All components have TypeScript types
-- Component styles use Sass variables and mixins
-- Barrel exports (index.ts) are properly configured
+- ✅ Button component matches original styling and behavior (primary/secondary variants, sizes)
+- ✅ Dropdown component includes proper click-outside functionality and accessibility
+- ✅ ScrollIndicator component has bounce animation and smooth scroll behavior
+- ✅ All components have comprehensive TypeScript types and interfaces
+- ✅ Component styles use Sass variables, mixins, and modern color functions
+- ✅ Barrel exports (index.ts) are properly configured for all components
+- ✅ Storybook stories created for all components with multiple variants
 
 ### Task 10: Create Terminal Component
 

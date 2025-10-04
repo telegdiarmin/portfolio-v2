@@ -1,1 +1,33 @@
-// ScrollIndicator styles
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &__icon {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3rem;
+    animation: bounce 0.8s infinite alternate;
+    user-select: none;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
