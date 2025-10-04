@@ -3,15 +3,11 @@ export interface ProfileData {
   title: string;
   bio: string;
   email: string;
-  location: string;
-  avatar: string;
 }
 
 export const profileData: ProfileData = {
-  name: "Armin Telegdi",
-  title: "Software Developer",
-  bio: "Passionate about creating efficient and scalable web applications.",
-  email: "contact@example.com",
-  location: "Location",
-  avatar: "/profile-picture.jpg",
+  name: "Ármin Telegdi",
+  title: "Software Engineer",
+  bio: "I'm a motivated and committed web developer. I love to learn, and I constantly keep improving my skills to solve more and more complex tasks with success. I pay attention to my tasks and do my duties with responsibility and precision. I'm also broad minded and love to think in systems. In my free time I read a lot or go out for a hike.",
+  email: "armin.telegdi@gmail.com",
 };

@@ -1,6 +1,6 @@
 export * from "./avatar";
 export * from "./button";
-export * from "./profile-section";
+export * from "./profile";
 export * from "./scroll-indicator";
 export * from "./skill-tag";
 export * from "./skills-cloud";

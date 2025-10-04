@@ -1,0 +1,59 @@
+@use "../../styles/variables" as *;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 25%;
+  background-image: linear-gradient(135deg, rgb(60, 60, 60), rgb(20, 20, 20));
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+.profile__title {
+  margin: 3rem 0;
+  color: $color-white;
+  font-family: $font-mono;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.profile__subtitle {
+  margin: 1rem 0;
+  color: $color-white;
+  font-family: $font-mono;
+  font-size: 1.2rem;
+}
+
+.profile__bio {
+  text-align: justify;
+  color: $color-white;
+  hyphens: auto;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.profile__contact {
+  text-align: justify;
+  color: $color-white;
+  hyphens: auto;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.profile__link {
+  text-decoration: none;
+  color: $color-primary;
+  font-weight: 600;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: rgb(137, 255, 243);
+  }
+}
