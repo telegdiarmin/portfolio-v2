@@ -1,11 +1,8 @@
-import type { FC } from 'react';
-import type { ProfileSectionProps } from './profile-section.types';
-import './ProfileSection.scss';
+import type { FC } from "react";
+
+import "./ProfileSection.scss";
+import type { ProfileSectionProps } from "./profile-section.types";
 
 export const ProfileSection: FC<ProfileSectionProps> = () => {
-  return (
-    <div>
-      ProfileSection
-    </div>
-  );
+  return <div>ProfileSection</div>;
 };

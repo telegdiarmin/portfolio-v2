@@ -1,10 +1,10 @@
-import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { Timeline } from './Timeline';
+import { Timeline } from "./Timeline";
+import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 
-describe('Timeline', () => {
-  it('renders without crashing', () => {
+describe("Timeline", () => {
+  it("renders without crashing", () => {
     render(<Timeline />);
-    expect(screen.getByText('Timeline')).toBeInTheDocument();
+    expect(screen.getByText("Timeline")).toBeInTheDocument();
   });
 });

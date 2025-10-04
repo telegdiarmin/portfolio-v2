@@ -8,10 +8,10 @@ export interface ProfileData {
 }
 
 export const profileData: ProfileData = {
-  name: 'Armin Telegdi',
-  title: 'Software Developer',
-  bio: 'Passionate about creating efficient and scalable web applications.',
-  email: 'contact@example.com',
-  location: 'Location',
-  avatar: '/Profile-picture.jpg'
+  name: "Armin Telegdi",
+  title: "Software Developer",
+  bio: "Passionate about creating efficient and scalable web applications.",
+  email: "contact@example.com",
+  location: "Location",
+  avatar: "/Profile-picture.jpg",
 };

@@ -1,2 +1,2 @@
-export * from './Typewriter';
-export * from './typewriter.types';
+export * from "./Typewriter";
+export * from "./typewriter.types";

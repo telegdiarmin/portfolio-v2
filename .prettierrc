@@ -7,7 +7,7 @@
   "jsxSingleQuote": true,
   "printWidth": 80,
   "bracketSpacing": true,
-  "arrowParens": "avoid",
+  "arrowParens": "always",
   "experimentalTernaries": true,
   "bracketSameLine": false,
   "quoteProps": "as-needed",
@@ -15,6 +15,7 @@
   "importOrder": [
     "^(react|react-dom)$",
     "<THIRD_PARTY_MODULES>",
+    "",
     "^@/(.*)$",
     "^[./]"
   ],

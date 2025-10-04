@@ -1,2 +1,2 @@
-export * from './SkillTag';
-export * from './skill-tag.types';
+export * from "./SkillTag";
+export * from "./skill-tag.types";

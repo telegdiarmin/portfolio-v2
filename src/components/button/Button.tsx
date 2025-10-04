@@ -1,11 +1,30 @@
-import type { FC } from 'react';
-import type { ButtonProps } from './button.types';
-import './Button.scss';
+import "./Button.scss";
+import type { ButtonProps } from "./button.types";
+import { getClasses } from "@/utils";
 
-export const Button: FC<ButtonProps> = ({ children }) => {
+export const Button = ({
+  children,
+  variant = "primary",
+  size = "medium",
+  disabled = false,
+  className = "",
+  onClick,
+}: ButtonProps) => {
+  const classes = getClasses([
+    "button",
+    `button--${variant}`,
+    `button--${size}`,
+    className,
+  ]);
+
   return (
-    <div>
+    <button
+      className={classes}
+      disabled={disabled}
+      onClick={onClick}
+      type='button'
+    >
       {children}
-    </div>
+    </button>
   );
 };

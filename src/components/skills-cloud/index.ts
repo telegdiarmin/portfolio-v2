@@ -1,2 +1,2 @@
-export * from './SkillsCloud';
-export * from './skills-cloud.types';
+export * from "./SkillsCloud";
+export * from "./skills-cloud.types";

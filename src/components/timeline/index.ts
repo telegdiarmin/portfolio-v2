@@ -1,2 +1,2 @@
-export * from './Timeline';
-export * from './timeline.types';
+export * from "./Timeline";
+export * from "./timeline.types";

@@ -1,2 +1,2 @@
-export * from './Terminal';
-export * from './terminal.types';
+export * from "./Terminal";
+export * from "./terminal.types";

@@ -1,11 +1,8 @@
-import type { FC } from 'react';
-import type { AvatarProps } from './avatar.types';
-import './Avatar.scss';
+import type { FC } from "react";
+
+import "./Avatar.scss";
+import type { AvatarProps } from "./avatar.types";
 
 export const Avatar: FC<AvatarProps> = () => {
-  return (
-    <div>
-      Avatar
-    </div>
-  );
+  return <div>Avatar</div>;
 };

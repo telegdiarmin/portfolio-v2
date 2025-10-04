@@ -1,10 +1,10 @@
-import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { Avatar } from './Avatar';
+import { Avatar } from "./Avatar";
+import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 
-describe('Avatar', () => {
-  it('renders without crashing', () => {
+describe("Avatar", () => {
+  it("renders without crashing", () => {
     render(<Avatar />);
-    expect(screen.getByText('Avatar')).toBeInTheDocument();
+    expect(screen.getByText("Avatar")).toBeInTheDocument();
   });
 });

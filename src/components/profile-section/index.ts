@@ -1,2 +1,2 @@
-export * from './ProfileSection';
-export * from './profile-section.types';
+export * from "./ProfileSection";
+export * from "./profile-section.types";
