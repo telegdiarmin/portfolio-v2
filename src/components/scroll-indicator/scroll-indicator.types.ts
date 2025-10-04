@@ -1,2 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface ScrollIndicatorProps {}
+export interface ScrollIndicatorProps {
+  targetSelector?: string;
+  className?: string;
+}

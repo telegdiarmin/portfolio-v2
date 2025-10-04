@@ -1,1 +1,46 @@
-// Avatar styles
+@use "../../styles/variables" as *;
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+
+  // Default size modifiers
+  &--small {
+    max-width: 6rem;
+  }
+
+  &--normal {
+    max-width: 8rem;
+  }
+}
+
+.avatar__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: solid 2px $color-white;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  background: $color-gray-dark;
+  transition: box-shadow 0.2s;
+  user-select: none;
+  display: block;
+
+  &:hover {
+    box-shadow: 0 4px 24px rgba(40, 235, 215, 0.25);
+  }
+}
+
+// Responsive sizing for smaller viewports
+@media (max-width: 600px) {
+  .avatar--normal {
+    max-width: 5rem;
+  }
+
+  .avatar--small {
+    max-width: 3.5rem;
+  }
+}

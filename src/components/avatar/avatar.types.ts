@@ -1,2 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface AvatarProps {}
+export interface AvatarProps {
+  width?: "small" | "normal";
+  className?: string;
+}
