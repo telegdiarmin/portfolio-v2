@@ -1,5 +1,6 @@
 import { Avatar } from "../avatar";
 import { Profile } from "./Profile";
+import type { ProfileProps } from "./profile.types";
 import { profileData } from "@/resources/data/profile-data";
 import type { Meta, StoryObj } from "@storybook/react";
 
@@ -20,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     data: profileData,
-  },
+  } satisfies ProfileProps,
 };
 
 export const CustomData: Story = {

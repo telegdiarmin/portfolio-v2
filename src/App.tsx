@@ -1,6 +1,7 @@
 import type { FC } from "react";
 
 import "./App.css";
+import { skillsData } from "./resources/data/skills-data";
 import { Avatar } from "@/components/avatar";
 import { Profile } from "@/components/profile";
 import { ScrollIndicator } from "@/components/scroll-indicator";
@@ -24,7 +25,7 @@ const App: FC = () => {
           <Timeline />
         </section>
         <section className='app__skills'>
-          <SkillsCloud />
+          <SkillsCloud skills={skillsData} />
         </section>
       </main>
     </div>

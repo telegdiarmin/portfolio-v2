@@ -1,6 +1,5 @@
 import type { SkillType } from "@/resources/data/skills-data";
 
-export interface SkillsCloudProps {
-  skills: SkillType[];
+export interface SkillTagProps extends SkillType {
   className?: string;
 }
