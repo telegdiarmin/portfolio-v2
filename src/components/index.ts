@@ -6,5 +6,5 @@ export * from "./skills-cloud";
 export * from "./skills-cloud/skill-tag";
 export * from "./terminal";
 export * from "./timeline";
-export * from "./timeline-item";
+export * from "./timeline/timeline-item";
 export * from "./typewriter";

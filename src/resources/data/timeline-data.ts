@@ -1,18 +1,22 @@
-export interface TimelineItem {
+export type TimelineDataType = {
   id: string;
   title: string;
-  company?: string;
-  period: string;
+  organization: string;
+  location?: string;
+  startDate: string;
+  endDate?: string;
   description: string;
-  type: "work" | "education" | "project";
-}
+  type: "work" | "education";
+};
 
-export const timelineData: TimelineItem[] = [
+export const timelineData: TimelineDataType[] = [
   {
     id: "1",
     title: "Senior Software Developer",
-    company: "Tech Company",
-    period: "2023 - Present",
+    organization: "Tech Company",
+    location: "Budapest",
+    startDate: "2023-01-01",
+    endDate: "Present",
     description:
       "Leading development of web applications using React and TypeScript.",
     type: "work",
@@ -20,8 +24,10 @@ export const timelineData: TimelineItem[] = [
   {
     id: "2",
     title: "Software Developer",
-    company: "Previous Company",
-    period: "2021 - 2023",
+    organization: "Previous Company",
+    location: "Budapest",
+    startDate: "2021-01-01",
+    endDate: "2023-01-01",
     description: "Developed and maintained full-stack applications.",
     type: "work",
   },

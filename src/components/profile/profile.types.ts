@@ -1,8 +1,8 @@
 import type { JSX } from "react";
 
-import type { ProfileData } from "@/resources/data/profile-data";
+import type { ProfileDataType } from "@/resources/data/profile-data";
 
 export type ProfileProps = {
-  data: ProfileData;
+  data: ProfileDataType;
   children?: JSX.Element;
 };

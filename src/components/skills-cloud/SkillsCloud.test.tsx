@@ -1,10 +1,10 @@
 import { SkillsCloud } from "./SkillsCloud";
-import type { SkillType } from "@/resources/data/skills-data";
+import type { SkillDataType } from "@/resources/data/skills-data";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 describe("SkillsCloud", () => {
-  const mockData: SkillType[] = [
+  const mockData: SkillDataType[] = [
     { name: "JavaScript", category: "technology" },
     { name: "TypeScript", category: "technology" },
     { name: "React", category: "technology" },

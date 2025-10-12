@@ -1,5 +1,5 @@
-import type { SkillType } from "@/resources/data/skills-data";
+import type { SkillDataType } from "@/resources/data/skills-data";
 
-export interface SkillTagProps extends SkillType {
+export interface SkillTagProps extends SkillDataType {
   className?: string;
 }

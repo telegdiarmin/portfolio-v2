@@ -1,9 +1,9 @@
 import { Profile } from "./Profile";
-import type { ProfileData } from "@/resources/data/profile-data";
+import type { ProfileDataType } from "@/resources/data/profile-data";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-const mockProfileData: ProfileData = {
+const mockProfileData: ProfileDataType = {
   name: "John Doe",
   title: "Software Engineer",
   bio: "A passionate developer with expertise in modern web technologies.",

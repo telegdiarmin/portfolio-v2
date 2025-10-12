@@ -1,0 +1,137 @@
+@use "@/styles/variables" as *;
+
+.timeline-item {
+  position: relative;
+  padding: 10px 0;
+  background-color: inherit;
+
+  // Diamond marker on the timeline
+  &::after {
+    position: absolute;
+    z-index: 1;
+    top: 19px;
+    right: -12px;
+    width: 26px;
+    height: 26px;
+    background-color: $color-primary;
+    transform: rotate(45deg);
+    content: "";
+  }
+
+  // Arrow pointing to centerline
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 22px;
+    width: 0;
+    height: 0;
+    border: medium solid $color-white;
+    content: "";
+  }
+
+  // Left-side items
+  &.timeline-item--left {
+    left: 0;
+    margin-right: 50%;
+    padding-right: 40px;
+
+    &::before {
+      right: 30px;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent $color-white;
+    }
+  }
+
+  // Right-side items
+  &.timeline-item--right {
+    margin-left: 50%;
+    padding-left: 40px;
+
+    &::before {
+      left: 30px;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent $color-white transparent transparent;
+    }
+
+    &::after {
+      left: -14px;
+    }
+  }
+
+  // Content container
+  &__content {
+    position: relative;
+    padding: 20px 30px;
+    background-color: $color-white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  // Title
+  &__title {
+    padding: 0 0 0.5rem 0;
+    font-family: $font-mono;
+    font-size: 1.5rem;
+    color: $color-text-gray-dark;
+    margin: 0;
+  }
+
+  // Date range
+  &__date {
+    padding: 0 0 1rem 0;
+    font-family: $font-mono;
+    font-size: 0.8rem;
+    color: $color-text-gray-medium;
+    margin: 0;
+  }
+
+  // Description
+  &__description {
+    font-size: 1rem;
+    text-align: justify;
+    hyphens: auto;
+    color: $color-text-gray-dark;
+    margin: 0;
+  }
+
+  // Divider accent
+  &__divider {
+    color: $color-primary;
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 600px) {
+  .timeline-item {
+    padding-left: 70px;
+
+    &::after {
+      left: 17px;
+    }
+
+    // Reset left/right positioning on mobile
+    &.timeline-item--left,
+    &.timeline-item--right {
+      left: 0;
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 70px;
+
+      // Override arrow direction for both left and right items
+      &::before {
+        left: 60px;
+        right: auto;
+        border: medium solid $color-white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent $color-white transparent transparent;
+      }
+
+      // Override diamond position for both left and right items
+      &::after {
+        left: 17px;
+        right: auto;
+      }
+    }
+  }
+}

@@ -1,8 +1,9 @@
 import { SkillsCloud } from "./SkillsCloud";
-import type { SkillType } from "@/resources/data/skills-data";
+import type { SkillsCloudProps } from "./skills-cloud.types";
+import type { SkillDataType } from "@/resources/data/skills-data";
 import type { Meta, StoryObj } from "@storybook/react";
 
-const skills: SkillType[] = [
+const skills: SkillDataType[] = [
   { name: "JavaScript", category: "technology" },
   { name: "TypeScript", category: "technology" },
   { name: "React", category: "technology" },
@@ -26,8 +27,8 @@ const meta: Meta<typeof SkillsCloud> = {
     layout: "centered",
   },
   args: {
-    skills: skills,
-  },
+    skills,
+  } satisfies SkillsCloudProps,
 };
 
 export default meta;

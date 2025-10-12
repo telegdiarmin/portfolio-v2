@@ -7,12 +7,12 @@ export const SkillCategoriesEnum = {
 type SkillCategoryType =
   (typeof SkillCategoriesEnum)[keyof typeof SkillCategoriesEnum];
 
-export type SkillType = {
+export type SkillDataType = {
   name: string;
   category: SkillCategoryType;
 };
 
-export const skillsData: SkillType[] = [
+export const skillsData: SkillDataType[] = [
   { name: "React", category: "technology" },
   { name: "TypeScript", category: "language" },
   { name: "JavaScript", category: "language" },

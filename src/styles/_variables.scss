@@ -1,14 +1,20 @@
-// Basic colors (extracted from original CSS)
-$color-primary: #28ebcc; // rgb(40, 235, 215)
-$color-white: #ffffff;
-$color-gray: #808080; // rgb(128, 128, 128)
-$color-gray-dark: #666666; // rgb(102, 102, 102)
-$color-blue-light: #8faadc; // rgb(143, 170, 220)
-$color-blue-dark: #4472c4; // rgb(68, 114, 196)
+// Colors
+$color-primary: rgb(40, 235, 215);
 
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+
+$color-gray: rgb(128, 128, 128);
 $color-gray-light: #000000; // temp
-$color-text-dark: #000000; // temp
+$color-gray-dark: rgb(102, 102, 102);
 
-// Typography (from original HTML)
+$color-blue-light: rgb(143, 170, 220);
+$color-blue-dark: rgb(68, 114, 196);
+
+// Text colors
+$color-text-gray-dark: rgb(40, 40, 40); // temp
+$color-text-gray-medium: rgb(120, 120, 120); // temp
+
+// Typography
 $font-primary: "Montserrat", sans-serif;
 $font-mono: "Source Code Pro", monospace;
