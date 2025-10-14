@@ -2,7 +2,7 @@
 
 .timeline {
   position: relative;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 2rem auto;
 
   // Vertical center line
   &::after {
@@ -21,7 +21,7 @@
 // Mobile responsive
 @media screen and (max-width: 600px) {
   .timeline {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     // Move vertical line to the left on mobile
     &::after {

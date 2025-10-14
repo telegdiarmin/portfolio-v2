@@ -1,24 +1,26 @@
+import { Heading } from "../heading";
 import "./Profile.scss";
 import type { ProfileProps } from "./profile.types";
 
 export const Profile = ({ data, children }: ProfileProps) => {
   return (
-    <div className='profile'>
-      <h1 className='profile__title'>{`<${data.name}/>`}</h1>
+    <>
+      <Heading text={`<${data.name}/>`} size='large' />
 
       {children}
 
-      <h2 className='profile__subtitle'>Profile</h2>
+      <Heading text='Profile' size='normal' />
 
-      <p className='profile__bio'>{data.bio} </p>
-
-      <p className='profile__contact'>
-        If you think I'd fit into your team, please don't hesitate to{" "}
-        <a href={`mailto:${data.email}`} className='profile__link'>
-          reach out to me
-        </a>
-        !
-      </p>
-    </div>
+      <div>
+        <span className='profile__bio'>{data.bio} </span>
+        <span className='profile__bio'>
+          If you think I'd fit into your team, please don't hesitate to{" "}
+          <a href={`mailto:${data.email}`} className='profile__link'>
+            reach out to me
+          </a>
+          !
+        </span>
+      </div>
+    </>
   );
 };

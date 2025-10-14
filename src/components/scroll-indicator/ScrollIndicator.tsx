@@ -3,13 +3,13 @@ import type { ScrollIndicatorProps } from "./scroll-indicator.types";
 import { getClasses } from "@/utils";
 
 export const ScrollIndicator = ({
-  targetSelector = "#about",
+  targetRef,
   className = "",
 }: ScrollIndicatorProps) => {
   const handleClick = () => {
-    const target = document.querySelector(targetSelector);
+    const target = targetRef?.current;
     if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 

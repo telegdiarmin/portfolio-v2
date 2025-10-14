@@ -20,6 +20,10 @@
     font-size: 3rem;
     animation: bounce 0.8s infinite alternate;
     user-select: none;
+
+    &.material-icons {
+      font-size: 3rem;
+    }
   }
 }
 

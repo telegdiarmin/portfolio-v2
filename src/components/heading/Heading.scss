@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+@use "sass:color";
+
+.heading {
+  color: $color-white;
+  font-family: $font-mono;
+  text-align: left;
+
+  &--large {
+    margin: 3rem 0;
+    font-size: 2rem;
+  }
+
+  &--normal {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+}

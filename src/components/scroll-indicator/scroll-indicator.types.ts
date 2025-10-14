@@ -1,4 +1,6 @@
+import type { RefObject } from "react";
+
 export interface ScrollIndicatorProps {
-  targetSelector?: string;
+  targetRef: RefObject<HTMLElement | null>;
   className?: string;
 }
